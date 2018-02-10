@@ -1,0 +1,110 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; }
+
+#main {
+    width: 600px;
+    margin: 0 auto;
+}
+@media screen and (min-width:320px){
+    nav {
+        text-align: left;
+        display:list-item;
+        width: 25%;
+    }
+    body {
+        margin:0;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    nav li{
+        display: inline;
+    }
+}
+
+    .clearfix{
+        overflow:auto;
+        zoom: 1;
+    }
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: inherit;
+    color: black;
+}
+
+h1 {
+    font-size: 42px;
+    color: azure;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    color: navy;
+    text-align: left;
+    display: inline;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+li a:hover{
+    background-color: lightblue;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.forecast {
+    font-size: 20px;
+    text-align: center;
+    float: center;
+
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: auto;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: mediumslateblue;
+    color: whitesmoke;
+}
+
+header img {
+    width: 220px;
+    height: auto;
+    float: center;
+}
+
+footer {
+    font-size: 18px;
+}
