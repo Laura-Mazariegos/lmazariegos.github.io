@@ -1,4 +1,5 @@
-<script>
-	var dt = new Date();
-document.getElementById("currentdate").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
-</script>
+var now = newDate();
+var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+var day = 'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var fdate = day[now.getDay()]+''+ now.getDate()+''+ month[now.getMonth()]+''+now.getFullYear();
+document.getElementById("current-date").innerHTML = fdate;
