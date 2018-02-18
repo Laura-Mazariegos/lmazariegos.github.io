@@ -1,0 +1,142 @@
+/* CIT 230 - Assignment Portal CSS Template */
+
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+
+* {margin: 0;box-sizing: border-box;}
+
+nav button{
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: lightgray;
+}
+
+nav {
+	background-color: darkgray;
+	font-family: 'muli';
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li a {
+	display: block;
+	padding:.8rem 2%;
+	text-decoration: none;
+	color: #000;
+	border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li a: hover{background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {display: none;}
+
+body {
+	font-size: 16px;
+	line-height: 32px;
+	font-family: 'muli', sans-serif;
+	color: black;
+}
+
+h1 {
+	font-size: 42px;
+	color: azure;
+}
+
+/*ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	width: 80px;
+	background-color: antiquewhite;
+}*/
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	border-bottom: 1px solid #bbb;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+
+}
+
+h3 table {
+	text-align: center;
+}
+
+.forecast {
+	display: none;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+header,
+main,
+footer {
+	margin: 1.25rem auto;
+	padding: .5rem;
+	max-width: none;
+}
+
+main figure.people {
+	width: 75%;
+	margin: auto;
+}
+
+main figure.people img {
+	width: 100%
+}
+
+main figure.sunny {
+	width: 75%;
+	margin: auto;
+}
+
+main figure.sunny img {
+	width: 100%
+}
+
+main figure.franklin {
+	width: 75%;
+	margin: auto;
+}
+
+main figure.franklin img {
+	width: 100%
+}
+
+header,
+footer,
+footer a {
+	text-align: center;
+	background-color: mediumslateblue;
+	color: whitesmoke;
+}
+
+header figure.scenic {
+	width: 75%;
+	margin: auto;
+	float: none;
+}
+
+header figure.scenic img {
+	width: 100%
+}
+
+footer {
+	font-size: 18px;
+}
