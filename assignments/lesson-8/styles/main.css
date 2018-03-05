@@ -1,42 +1,45 @@
-* { margin: 0; box-sizing: border-box;}
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
 
-html{
-	font-family: Ubuntu, sans-serif;
-}
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; }
 
-table.header:first-child{
-	background-color: #7fb9c2;
-}
-
-table.header:nth-child(even){
-	background-color: #628ca6;
-	color: white;
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: sans-serif;
+    color: black;
 }
 
-table {
-	box-shadow: 10px 15px #628ca6;
-}
-table, th, td {
-	border: 1px solid gray;
-	border-collapse: collapse;
+h1 {
+    font-size: 42px;
+    color: azure;
 }
 
-th, td {
-	padding: 5px;
-	text-align: center;
+h2 {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
 }
 
-th {
-	text-align: center;
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: auto;
 }
 
-tr:nth-child(even){
-	background-color: #e7f0ed;
+header, footer, footer a {
+    text-align: center;
+    background-color: mediumslateblue;
+    color: whitesmoke;
 }
 
-tr:nth-child(odd){
-	background-color: #e7ffed;
+header img {
+    width: 150px;
+    height: auto;
+    float: right;
 }
-tfoot {
-	background-color: #7fb9c2;
+
+footer {
+    font-size: 18px;
 }
