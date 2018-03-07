@@ -4,6 +4,7 @@
 
 /* * is a wildcard referring to all elements. */
 
+
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -155,4 +156,29 @@ header figure.scenic img {
 
 footer {
 	font-size: 18px;
+}
+form#weatherform {
+	margin: 1em 5%;
+	text-align: center
+}
+fieldset{
+	background-color:cornsilk;
+	border-radius: 2em;
+	margin:auto;
+	border: firebrick solid;
+	box-shadow: 5px 5px 15px firebrick;
+}
+legend {
+	color: ghostwhite;
+	margin-left: 5%;
+	padding: .8em;
+	border: darkcyan solid;
+	background-color: firebrick;
+	border-radius: 1em;
+
+}
+label span{
+	display:block;
+	padding-top: 1em;
+	text-align: center;
 }
