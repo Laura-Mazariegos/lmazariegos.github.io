@@ -20,7 +20,7 @@
 	}
 
 	nav ul.hide {
-		display: flex;
+		display: block;
 	}
 
 	nav ul {
