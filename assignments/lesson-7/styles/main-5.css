@@ -73,6 +73,12 @@ h2 {
 	text-align: center;
 	border-bottom: 1px solid #bbb;
 }
+main ul li{
+	padding: 1em 1em 1em 1em;
+	border: 2px solid black;
+	margin: 5px 5px;
+
+}
 
 h3 {
 	font-size: 30px;
