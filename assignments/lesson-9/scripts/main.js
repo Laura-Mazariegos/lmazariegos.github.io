@@ -11,6 +11,7 @@ weatherObject.onload = function() {
 	document.getElementById('windSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
 	document.getElementById('description').innerHTML = weatherInfo.current_observation.weather;
 	document.getElementById('wIcon').src = weatherInfo.current_observation.icon_url;
+	document.getElementById('terms').innerHTML=weatherInfo.response.termsofService;
 
 }
 var townData = new XMLHttpRequest();
