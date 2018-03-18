@@ -11,6 +11,7 @@ weatherObject.onload = function() {
 	document.getElementById('windSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
 	document.getElementById('description').innerHTML = weatherInfo.current_observation.weather;
 	document.getElementById('wIcon').src = weatherInfo.current_observation.icon_url;
+
 }
 
 var greenvilleWeather = new XMLHttpRequest();
@@ -25,6 +26,7 @@ var greenvilleWeather = new XMLHttpRequest();
 		document.getElementById('windSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
 		document.getElementById('description').innerHTML = weatherInfo.current_observation.weather;
 		document.getElementById('wIcon').src = weatherInfo.current_observation.icon_url;
+
 	}
 
 var springfieldWeather = new XMLHttpRequest();		springfieldWeather.open('GET','https://api.wunderground.com/api/06755379febc9626/conditions/q/OR/Springfield.json', true );
@@ -38,7 +40,7 @@ var springfieldWeather = new XMLHttpRequest();		springfieldWeather.open('GET','h
 			document.getElementById('windSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
 			document.getElementById('description').innerHTML = weatherInfo.current_observation.weather;
 			document.getElementById('wIcon').src = weatherInfo.current_observation.icon_url;
-			document.getElementById('terms').innerHTML=weatherInfo.response.termsofService;
+
 
 }
 var townData = new XMLHttpRequest();
@@ -48,6 +50,7 @@ townData.send();
 townData.onload = function() {
 	var townInfo = JSON.parse(townData.responseText);
 	console.log(townInfo);
+
 	document.getElementById('motto').innerHTML = townInfo.towns["0"].motto;
 	document.getElementById('yearFounded').innerHTML = townInfo.towns["0"].yearFounded;
 	document.getElementById('population').innerHTML = townInfo.towns["0"].currentPopulation;
