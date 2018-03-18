@@ -1,0 +1,173 @@
+/* CIT 230 - Assignment Portal CSS Template */
+
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 35em) {
+
+	#main {
+		width: 600px;
+		margin: 0 auto;
+	}
+	nav button {
+		display: none;
+	}
+
+	nav ul.navigation {
+		display: auto;
+	}
+
+	nav ul {
+		margin-left: auto;
+	}
+
+	nav ul li a {
+		border: none;
+		border: 1px solid lightgrey;
+		padding: 1rem 1rem;
+		font-size: 20px;
+	}
+
+	/*nav {
+	text-align: left;
+	display: list-item;
+	width: 25%;
+}
+
+//nav li {
+	display: inline;
+}
+*/
+	.clearfix {
+		overflow: auto;
+		zoom: 1;
+	}
+
+	body {
+		font-size: 16px;
+		line-height: 32px;
+		font-family: 'muli', sans-serif;
+		color: black;
+	}
+
+	h1 {
+		font-size: 42px;
+		color: azure;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: auto;
+
+	}
+
+
+	li {
+		float: left;
+	}
+
+	li a {
+		color: navy;
+		text-align: left;
+		display: inline-flex;
+		padding: 10px;
+		background-color: lightgray;
+	}
+
+	li a.hover {
+		background-color: lightblue;
+	}
+
+	h2 {
+		font-size: 30px;
+		text-align: center;
+		border-bottom: 1px solid #bbb;
+	}
+
+main ul li{
+	text-align: center;
+	display:grid;
+	/*grid-template-columns: repeat (2,1fr);*/
+	padding:1em 1em 1em 1em ;
+
+}
+
+	main ul.home{
+		margin: auto;
+		display:grid;
+		grid-template-columns: auto;
+	}
+	/*main ul li figure.fall img{
+		width: 100%;
+		padding: 1em 2em 1em 2em;
+	}
+	main ul li figure.lightning img{
+		width:100%;
+		padding: 1em 2em 1em 2em;
+
+	}*/
+
+main figure.weather {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+main figure.weather:hover {
+	color: lightgray;
+}
+
+	.forecast h3 {
+		visibility: visible;
+		border-bottom: 1px solid #bbb;
+	}
+
+	table {
+		visibility: visible;
+		border: 1px solid #bbb;
+		text-align: center;
+		margin: auto;
+		font-size: 18px;
+
+	}
+
+	table th {
+		background-color: yellow
+	}
+
+	table td {
+		background-color: cyan
+	}
+header,
+main,
+footer {
+	margin: 1.25rem auto;
+	padding: .5rem;
+	max-width: none;
+}
+
+header,
+footer,
+footer a {
+	text-align: center;
+	background-color: mediumslateblue;
+	color: whitesmoke;
+}
+
+
+header img {
+	width: 50%;
+}
+
+footer {
+	font-size: 18px;
+}
+
+}

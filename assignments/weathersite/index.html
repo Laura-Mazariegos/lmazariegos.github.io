@@ -1,0 +1,106 @@
+<!doctype HTML>
+<html lang="en-US">
+
+	<head>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title> Franklin’s First to Know Weather Updates </title>
+	<meta name="Franklin Area Weather" content="Franklin Weather Page">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<!-- Google API font reference -->
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main-5.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium-5.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large-5.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+	<header>
+		<figure class="rainbow"> <img src="images/rsz_rainbow_weather.jpg" alt="rainbow">
+		</figure>
+		<h1> Franklin Area Weather Page </h1>
+		<div class="subheading">
+		</div>
+	</header>
+	<nav>
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul id="mainmenu" class="navigation">
+			<li class="active"><a href="index.html"> Home </a></li>
+			<li><a href="franklin.html"> Franklin </a></li>
+			<li><a href="greenville.html"> Greenville </a></li>
+			<li><a href="springfield.html"> Springfield </a></li>
+			<li><a href="stormcenter.html"> Storm Center </a></li>
+			<li><a href="gallery.html"> Gallery </a></li>
+		</ul>
+	</nav>
+	<main>
+
+		<ul class="home">
+			<li>
+				<figure class="field">
+					<img src="images/rsz_field_weather.jpg" alt="field">
+				</figure>
+				<h2>Franklin Area Information</h2>
+				<p><strong>Town Motto:</strong> <span id="motto"></span><br>
+					<strong>Year Founded:</strong> <span id="yearFounded"></span><br>
+					<strong>Town Population:</strong> <span id="population"></span><br>
+					<strong>Annual Rainfall:</strong> <span id="annualRainfall"></span>"
+				</p>
+			</li>
+
+			<li>
+				<figure class="fall">
+					<img src="images/rsz_fall_weather.jpg" alt="fall"></figure>
+				<h2>Greenville</h2>
+				<p><strong>Town Motto:</strong> <span id="motto1"></span><br>
+					<strong>Year Founded:</strong> <span id="yearFounded1"></span><br>
+					<strong>Town Population:</strong> <span id="population1"></span><br>
+					<strong>Annual Rainfall:</strong> <span id="annualRainfall1"></span>"</p>
+			</li>
+			<li>
+				<figure class="lightning">
+					<img src="images/rsz_lightning_weather.jpg" alt="lightning"></figure>
+				<h2>Springfield</h2>
+				<p><strong>Town Motto:</strong> <span id="motto2"></span><br>
+					<strong>Year Founded:</strong> <span id="yearFounded2"></span><br>
+					<strong>Town Population:</strong> <span id="population2"></span><br>
+					<strong>Annual Rainfall:</strong> <span id="annualRainfall2"></span>"</p>
+			</li>
+		</ul>
+	</main>
+	<footer>
+		<aside>
+			&star; John Doe @ 555-444-666 &star; <br> email:
+			<a href="johndoe@gmail.com"> johndoe@gmail.com</a>
+		</aside>
+		<p class="footer-bar">&copy;2017 All Rights Reserved<br> Franklin's Area Up To Date Weather Information <br>Date: <span id="current-date"></span></p>
+		<span id="terms"></span>
+	</footer>
+</body>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script>
+	var urlString = document.location.href;
+	var urlArray = urlString.split('/');
+	var pageHREF = urlArray[urlArray.length - 1];
+
+	if (pageHREF !== "") {
+		var menu = document.querySelectorAll('ul#mainmenu li a');
+		var i;
+		for (i = 0; i < menu.length; i++) {
+			var vurrentURL = (menu[i]
+				.getAttribute("href"));
+			menu[i].parenNode.className = "";
+			if (currentURL === pageHREF) {
+				menu[i].parentNode.className = "active";
+			}
+		}
+	}
+</script>
+</html>

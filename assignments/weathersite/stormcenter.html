@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-us">
+
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Franklin's Area Up To Date Weather Information </title>
+	<meta name="author" content="Laura Mazariegos">
+	<meta name="description" content="Franklin's Area Up To Date Weather Information">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<!-- Google API font reference -->
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main-5.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium-5.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large-5.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+	<header>
+		<figure class="scenic">
+			<img src="images/rsz_scenic-view.jpg" alt="The site logo">
+		</figure>
+		<h1>Franklin's Area Up To Date Weather Information</h1>
+		<div class="subheading">You're the First to Know Weather Page</div>
+	</header>
+
+	<!-- site navigation use placeholder references -->
+	<nav>
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul id="main-menu" class="hide">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="franklin.html">Franklin</a></li>
+			<li><a href="greenville.html">Greenville</a></li>
+			<li><a href="springfield.html">Springfield</a></li>
+			<li class="active"><a href="stormcenter.html">Storm Center</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+	<h2>Storm Center</h2>
+	<main>
+		<div class="form">
+			<form action="thanks.php" method="post" enctype="multiport/form-data" name="storm" id="weatherform">
+				<fieldset>
+					<legend><span>Personal Information</span></legend>
+					<label><span>Full name:</span> <input name="fullname" type="text" value="" placeholder="Full Name" pattern="[A-Za-z ]{5,30}" required></label>
+					<label><span>E-mail: </span><input name="email" type="email" value="" placeholder="sample@email.com"></label>
+					<label><span>Phone Number:</span> <input name="phone" type="tel" value="" placeholder="555-555-5555" pattern="[0-9 -]{10,20}" required></label>
+					<label><span>Zip Code: </span><input name="zipcode" type="number" value="" placeholder="Zip Code" required></label>
+				</fieldset>
+				<fieldset>
+					<legend><span>Storm Information</span></legend>
+					<label><span>Storm Date:</span> <input name="stormdate" type="date" value="" placeholder="Storm Date"></label>
+					<label><span>Storm Type: </span><input list="stormtype" placeholder="Select Storm Type">
+							<datalist id= "stormtype">
+								<option value="Flash Flood">
+								<option value="Hail">
+								<option value="Hurricane">
+								<option value="Thunderstorm">
+								<option value="Tornado">
+							</datalist>
+						</label>
+					<label for="rating"><span>Storm Severity(1-10):</span></label>
+					<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+					<span id="ratingvalue">5</span>
+					<label><span>Storm Region: </span><input list="stormregion" placeholder="Select Region">
+							<datalist id= "stormregion">
+								<option value="Franklin">
+								<option value="Greenville">
+								<option value="Springfield">
+							</datalist>
+						</label><br>
+					<span> User In Danger: </span>
+						<br><input name="danger" type="radio" value="Yes">Yes
+						<input  name="danger" type="radio" value="No">No
+						<input  name="danger" type="radio" value="Maybe">Maybe
+
+					<label><span>Comments or Additional Information:</span><br> <textarea name="comments" rows="10" cols="30"></textarea></label><br>
+					<input type="submit" value="Submit">
+					<input name="redirect" type="hidden" value="thanks.php">
+
+				</fieldset>
+			</form>
+
+
+
+
+
+
+
+		</div>
+	</main>
+
+	<footer>
+		<aside>
+			&star; John Doe @ 555-444-666 &star; <br> email:
+			<a href="johndoe@gmail.com"> johndoe@gmail.com</a>
+		</aside>
+		<p class="footer-bar">&copy;2017 All Rights Reserved <br> Franklin's Area Up To Date Weather Information <br>Date: <span id="current-date"></span></p>
+	</footer>
+
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+/* CIT 230 - Assignment Portal CSS Template */
+
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: lightgray;
+}
+
+.navigation.responsive {
+	position: absolute;
+	margin: 0 0 0 0;
+	top: 12px;
+	right: 45px;
+}
+.navigation.responsive li {
+	background-color: lightgray;
+	display: block;
+	width: 100%;
+	border: 1px solid darkgray;
+}
+.navigation.responsive li a {
+	padding: 5px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+nav {
+	margin:auto;
+	background-color: darkgray;
+	font-family: 'muli';
+}
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	padding: 2em 2em 2em;
+}
+
+nav ul li.active a{
+	background:darkgray;
+}
+
+nav ul li a {
+	margin: auto;
+	font-size: 28px;
+	display: flex;
+	padding: 1em 1em 1em 1em;
+	text-align: center;
+	color: #000;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+}
+
+nav ul.navigation {
+	display:;
+}
+
+body {
+	font-size: 16px;
+	line-height: 32px;
+	font-family: 'muli', sans-serif;
+	color: black;
+}
+
+h1 {
+	font-size: 42px;
+	color: purple;
+}
+
+/*ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	width: 80px;
+	background-color: antiquewhite;
+}*/
+
+main ul li{
+	padding: 1em 1em 1em 1em;
+	border: 2px solid black;
+	margin: 5px 5px;
+	display:grid;
+	grid-template-columns: auto;
+
+}
+main ul.home{
+	margin: auto;
+	/*display:grid;
+	grid-template-columns: auto;*/
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	border-bottom: 1px solid #bbb;
+}
+
+p {
+	border: 2px solid black;
+	margin: 2em 2em 2em;
+	text-align: center;
+}
+
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+
+}
+
+.forecast h3 {
+	visibility: hidden;
+	border-bottom: 1px solid #bbb;
+}
+
+table {
+	visibility: hidden;
+	border: 1px solid #bbb;
+	text-align: center;
+	margin: auto;
+	font-size: 18px;
+
+}
+
+table th {
+	background-color: yellow
+}
+
+table td {
+	background-color: cyan
+}
+
+
+header,
+main,
+footer {
+	margin: 1.25rem auto;
+	padding: .5rem;
+	max-width: none;
+}
+
+main figure.people img {
+	margin: auto;
+	width: 100%;
+
+}
+
+header figure.rainbow img {
+	width: 100%;
+}
+
+main ul li weather.fog weather img {
+	width: 100%
+	margin: auto;
+}
+
+main ul li weather.fall img {
+	width: 100%;
+	margin: auto;
+}
+
+main ul li weather.lightning img {
+	width: 100%;
+	margin: auto;
+}
+
+main ul li weather.dry weather img{
+	width:100%;
+	margin: auto;
+}
+
+main ul li weather.field img {
+	width: 100%;
+	margin: auto;
+}
+
+main ul li weather.rainbow img{
+	width: 100%;
+	margin: auto;
+}
+
+main figure.field img {
+	width: 100%;
+	margin: auto;
+}
+
+main figure.rainbow img {
+	width: 100%;
+	margin: auto;
+}
+
+main figure.sunny img {
+	width: 100%;
+	margin: auto;
+}
+
+main figure.fog img {
+	width: 100%;
+	margin: auto;
+
+}
+main figure.fall img{
+	width:100%;
+	margin: auto;
+}
+main figure.lightning img{
+	width:100%;
+	margin:auto;
+}
+main figure.franklin {
+	width: 75%;
+	margin: auto;
+}
+
+main figure.franklin img {
+	width: 100%
+}
+
+main figure.weather {
+	display: grid;
+
+}
+
+main figure.weather:hover {
+	color: lightgray;
+}
+
+header,
+footer,
+footer a {
+	text-align: center;
+	background-color: mediumslateblue;
+	color: whitesmoke;
+}
+
+header figure.scenic {
+	width: auto;
+	margin: auto;
+	float: none;
+}
+
+header figure.scenic img {
+	width: 100%
+}
+
+footer {
+	font-size: 18px;
+}
+
+form#weatherform {
+	margin: 1em 5%;
+	text-align: center
+}
+
+fieldset {
+	background-color: cornsilk;
+	border-radius: 2em;
+	margin: auto;
+	border: firebrick solid;
+	box-shadow: 5px 5px 15px firebrick;
+	max-width: 60%
+}
+
+legend {
+	color: ghostwhite;
+	margin-left: 5%;
+	padding: .8em;
+	border: darkcyan solid;
+	background-color: firebrick;
+	border-radius: 1em;
+
+}
+
+label span {
+	display: block;
+	padding-top: 1em;
+	text-align: center;
+}
