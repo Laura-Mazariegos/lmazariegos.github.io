@@ -45,7 +45,7 @@
 	<h2>Storm Center</h2>
 	<main>
 		<div class="form">
-			<form action="thanks.php" method="post" enctype="multiport/form-data" name="storm" id="weatherform">
+			<form action="thanks.php" method="post" enctype="multipart/form-data" name="storm" id="weatherform">
 				<fieldset>
 					<legend><span>Personal Information</span></legend>
 					<label><span>Full name:</span> <input name="fullname" type="text" value="" placeholder="Full Name" pattern="[A-Za-z ]{5,30}" required></label>
@@ -55,7 +55,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><span>Storm Information</span></legend>
-					<label><span>Storm Date:</span> <input name="stormdate" type="date" value="" placeholder="Storm Date"></label>
+					<label><span>Storm Date:</span> <input name="stormdate" type="date" value="" ></label>
 					<label><span>Storm Type: </span><input list="stormtype" placeholder="Select Storm Type">
 							<datalist id= "stormtype">
 								<option value="Flash Flood">
