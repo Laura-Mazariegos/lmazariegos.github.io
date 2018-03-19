@@ -1,126 +1,154 @@
 <!doctype html>
 <html lang="en-us">
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> Franklin's Area Up To Date Weather Information </title>
-		<meta name="author" content="Laura Mazariegos">
-		<meta name="description" content="Franklin's Area Up To Date Weather Information">
-		<!-- external style references in the proper cascading order -->
-		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-		<!-- Google API font reference -->
-		<link href="styles/normalize.css" rel="stylesheet">
-		<!-- normalize useragent/browser defaults -->
-		<link href="styles/main-5.css" rel="stylesheet">
-		<!-- default styles - small/phone views -->
-		<link href="styles/medium-5.css" rel="stylesheet">
-		<!-- medium/tablet views -->
-		<link href="styles/large-5.css" rel="stylesheet">
-		<!-- large/wide/desktop views -->
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Franklin's Area Up To Date Weather Information </title>
+	<meta name="author" content="Laura Mazariegos">
+	<meta name="description" content="Franklin's Area Up To Date Weather Information">
+	<!-- external style references in the proper cascading order -->
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<!-- Google API font reference -->
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- normalize useragent/browser defaults -->
+	<link href="styles/main-5.css" rel="stylesheet">
+	<!-- default styles - small/phone views -->
+	<link href="styles/medium-5.css" rel="stylesheet">
+	<!-- medium/tablet views -->
+	<link href="styles/large-5.css" rel="stylesheet">
+	<!-- large/wide/desktop views -->
+</head>
 
-	<body>
+<body>
 
-		<header>
-			<figure class="scenic">
-				<img src="images/rsz_scenic-view.jpg" alt="The site logo">
-			</figure>
-			<h1>Franklin's Area Up To Date Weather Information</h1>
-			<div class="subheading">You're the First to Know Weather Page</div>
-		</header>
+	<header>
+		<figure class="scenic">
+			<img src="images/rsz_scenic-view.jpg" alt="The site logo">
+		</figure>
+		<h1>Franklin's Area Up To Date Weather Information</h1>
+		<div class="subheading">You're the First to Know Weather Page</div>
+	</header>
 
-		<!-- site navigation use placeholder references -->
-		<nav>
-			<button onclick="toggleMenu()">&#9776;</button>
-			<ul id="main-menu" class="hide">
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="franklin.html">Franklin</a></li>
-				<li><a href="greenville.html">Greenville</a></li>
-				<li><a href="springfield.html">Springfield</a></li>
-				<li><a href="stormcenter.html">Storm Center</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-			</ul>
-		</nav>
+	<!-- site navigation use placeholder references -->
+	<nav>
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul id="main-menu" class="hide">
+			<li><a href="index.html">Home</a></li>
+			<li class="active"><a href="franklin.html">Franklin</a></li>
+			<li><a href="greenville.html">Greenville</a></li>
+			<li><a href="springfield.html">Springfield</a></li>
+			<li><a href="stormcenter.html">Storm Center</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
 
-		<main>
-			<h2>The City of Franklin</h2><br>
-			<figure class="franklin">
-				<img src="images/small-franklin-original.jpg" alt="Franklin City view">
-			</figure><br>
-			<section>
+	<main>
+		<h2>The City of Franklin</h2><br>
+		<figure class="franklin">
+			<img src="images/small-franklin-original.jpg" alt="Franklin City view">
+		</figure><br>
+		<section>
 
-				<h2>Weather Conditions for <span id="place">Franklin</span></h2><br>
-				<p><strong>Current Temperature:</strong> <span id="currentTemp">90</span>&deg;F<br>
-					<strong>Feels Like:</strong> <span id="feelsLike"></span><br>
-					<strong>Wind Speed:</strong> <span id="windSpeed"></span>MPH<br>
-					<strong>Current Conditions:</strong> <span id="description"></span><br>
-					<img id="wIcon" src="" alt="conditions">
-				</p>
+			<h2>Weather Conditions for <span id="place">Franklin</span></h2><br>
+			<p><strong>Current Temperature:</strong> <span id="currentTemp">90</span>&deg;F<br>
+				<strong>Feels Like:</strong> <span id="feelsLike"></span><br>
+				<strong>Wind Speed:</strong> <span id="windSpeed"></span>MPH<br>
+				<strong>Current Conditions:</strong> <span id="description"></span><br>
+				<img id="wIcon" src="" alt="conditions">
+			</p>
 
-			</section>
+		</section>
 
-			<section class="forecast">
-				<h3>10 Day Forecast</h3><br>
-				<br>
-				<table>
-					<thead>
+		<section class="summary">
+			<h3> Franklin Weather Summary</h3>
+			<table>
+				<tbody>
+
+					<tr>
+						<th>Summary</th>
+						<td>Sunny</td>
+					</tr>
 						<tr>
-							<th>Day 1</th>
-							<th>Day 2</th>
-							<th>Day 3</th>
-							<th>Day 4</th>
-							<th>Day 5</th>
-							<th>Day 6</th>
-							<th>Day 7</th>
-							<th>Day 8</th>
-							<th>Day 9</th>
-							<th>Day 10</th>
+							<th>High</th>
+							<td>90&deg;F</td>
 						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>89&deg;F</td>
-							<td>87&deg;F</td>
-							<td>78&deg;F</td>
-							<td>75&deg;F</td>
-							<td>72&deg;F</td>
-							<td>72&deg;F</td>
-							<td>79&deg;F</td>
-							<td>83&deg;F</td>
-							<td>85&deg;F</td>
-							<td>89&deg;F</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
+					<tr>
+						<th>Low</th>
+						<td>66&deg;F</td>
+					</tr>
+					<tr>
+						<th>Chance Precipitation</th>
+						<td>0%</td>
+					</tr>
+					<tr>
+						<th>Max Wind</th>
+						<td>5 mph SW</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
-			<article>
+		<section class="forecast">
+			<h3>10 Day Forecast</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Day 1</th>
+						<th>Day 2</th>
+						<th>Day 3</th>
+						<th>Day 4</th>
+						<th>Day 5</th>
+						<th>Day 6</th>
+						<th>Day 7</th>
+						<th>Day 8</th>
+						<th>Day 9</th>
+						<th>Day 10</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>89&deg;F</td>
+						<td>87&deg;F</td>
+						<td>78&deg;F</td>
+						<td>75&deg;F</td>
+						<td>72&deg;F</td>
+						<td>72&deg;F</td>
+						<td>79&deg;F</td>
+						<td>83&deg;F</td>
+						<td>85&deg;F</td>
+						<td>89&deg;F</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<article>
+			<br>
+			<h3>Franklin Breaks Record</h3>
+			<p class="town-article">
+				<figure class="people">
+					<img src="images/rsz_1rsz_1rsz_nature-bird-people-grass.jpg" alt="Around town">
+				</figure>
 				<br>
-				<h3>Franklin Breaks Record</h3>
-				<p class="town-article">
-					<figure class="people">
-						<img src="images/rsz_1rsz_1rsz_nature-bird-people-grass.jpg" alt="Around town">
-					</figure>
-					<br>
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel est blandit, suscipit sem et, iaculis tortor. Mauris vitae nibh magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque tincidunt pulvinar risus eu iaculis. Donec a velit mollis, vestibulum justo et, semper nulla. Donec id blandit neque. Nunc pretium, odio at consectetur dignissim, orci nibh dignissim libero, eget egestas risus nunc vel urna. Suspendisse maximus nisl eu diam scelerisque, eget varius nisi vestibulum. Proin lacinia, sem vitae convallis porta, libero mi lobortis nisl, sollicitudin congue dolor sapien vel ipsum. Etiam pulvinar arcu non ipsum gravida vestibulum. Nunc iaculis vitae risus eget congue.
 				</p>
-			</article>
+		</article>
 
-		</main>
+	</main>
 
-		<footer>
-			<aside>
-				&star;John Doe @ 555-444-666 &star;<br> email:
-				<a href="johndoe@gmail.com"> johndoe@gmail.com</a>
-			</aside>
-			<p class="footer-bar">&copy;2017 All Rights Reserved <br> Franklin's Area Up To Date Weather Information <br>Date: <span id="current-date"></span></p>
-		</footer>
-	</body>
-	<script src="scripts/currentdate.js"></script>
-	<script src="scripts/hamburger.js"></script>
-	<script src="scripts/windchill.js"></script>
-	<script type="text/javascript" src="scripts/main.js"></script>
+	<footer>
+		<aside>
+			&star;John Doe @ 555-444-666 &star;<br> email:
+			<a href="johndoe@gmail.com"> johndoe@gmail.com</a>
+		</aside>
+		<p class="footer-bar">&copy;2017 All Rights Reserved <br> Franklin's Area Up To Date Weather Information <br>Date: <span id="current-date"></span></p>
+	</footer>
+</body>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 
 
 </html>
