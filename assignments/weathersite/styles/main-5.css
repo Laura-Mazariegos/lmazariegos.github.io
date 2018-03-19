@@ -96,7 +96,7 @@ li a {
 	background-color: antiquewhite;
 }*/
 
-main ul li{
+main ul li {
 	padding: 1em 1em 1em 1em;
 	border: 2px solid black;
 	margin: 5px 5px;
@@ -121,7 +121,13 @@ p {
 	margin: 2em 2em 2em;
 	text-align: center;
 }
-
+.summary table{
+	visibility: visible;
+	padding: 10px;
+	text-align: center;
+	border: 2px solid black;
+	margin: auto;
+}
 
 h3 {
 	font-size: 30px;
@@ -160,6 +166,9 @@ footer {
 	max-width: none;
 }
 
+figcaption {
+	color: black;
+}
 main figure.people img {
 	margin: auto;
 	width: 100%;
