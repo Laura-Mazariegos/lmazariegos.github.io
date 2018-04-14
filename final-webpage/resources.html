@@ -1,0 +1,95 @@
+<!doctype HTML>
+<html lang="en-US">
+
+	<head>
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>The Mountain Spoke - Bozeman, MT </title>
+		<meta name="Title" content="The Mountain Spoke: Bicycles and Cyclist Enthusiasts">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<!-- Google API font reference -->
+		<link href="styles/normalize.css" rel="stylesheet">
+		<!-- normalize useragent/browser defaults -->
+		<link href="styles/main-5.css" rel="stylesheet">
+		<!-- default styles - small/phone views -->
+		<link href="styles/medium-5.css" rel="stylesheet">
+		<!-- medium/tablet views -->
+		<link href="styles/large-5.css" rel="stylesheet">
+		<!-- large/wide/desktop views -->
+	</head>
+
+	<body>
+		<header>
+			<figure class="logo"> <img src="images/logo.jpg" alt="biking logo">
+			</figure>
+			<h1> The Mountain Spoke </h1>
+			<div class="subheading">
+			</div>
+		</header>
+		<nav>
+			<div>
+				<button id="hamburgerBtn">&#9776;</button>
+				<ul id="primaryNav" class="hide">
+					<li><a href="index.html"> Home </a></li>
+					<li><a href="adventure_tours.html"> Adventure Tours </a></li>
+					<li><a href="events.html"> Events </a></li>
+					<li><a href="service.html"> Service </a></li>
+					<li><a href="sales.html"> Sales </a></li>
+					<li><a href="contact.html"> Contact Us </a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<h2>Resources:</h2>
+			<ul class="home">
+				<li><a href= "https://www.postholer.com/google-map/Continental-Divide-Trail/2">Continental Divide Trail @ https://www.postholer.com/google-map/Continental-Divide-Trail/2</a></li>
+				<li><a href="https://bikeworldiowa.com/">Bike World @ https://bikeworldiowa.com/</a></li>
+				<li><a href="https://www.google.com">Google Maps @ https://www.google.com</a></li>
+				<li><a href="https://www.pexels.com/"> Free Stock Photos @ https://www.pexels.com/</a></li>
+
+			</ul>
+		</main>
+		<footer>
+			<aside>
+				&star; John Doe @ 555-444-666 &star; <br> email:
+				<a href="johndoe@gmail.com"> johndoe@gmail.com</a>
+			</aside>
+			<p class="footer-bar">&copy;2017 All Rights Reserved<br>The Mountain Spoke <br><a href= "https://www.google.com/maps/place/3950+Valley+Commons+Dr,+Bozeman,+MT+59718/@45.6722729,-111.0929062,17z/data=!3m1!4b1!4m5!3m4!1s0x5345459ab72cb6df:0xbb98968f9648ea88!8m2!3d45.6722729!4d-111.0907175">3950 Valley Commons Drive Bozeman, MT</a><br>Date: <span id="current-date"></span></p>
+			<span id="terms"></span>
+			<ul>
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="adventure_tours.html"> Adventure Tours </a></li>
+				<li><a href="events.html"> Events </a></li>
+				<li><a href="service.html"> Service </a></li>
+				<li><a href="sales.html"> Sales </a></li>
+				<li><a href="contact.html"> Contact Us </a></li>
+				<li><a href="resources.html"> Resources</a></li>
+				<li><a href="video.html">Overview Video</a></li>
+			</ul>
+		</footer>
+	</body>
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/hamburger.js"></script>
+
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+	<script>
+		var urlString = document.location.href;
+		var urlArray = urlString.split('/');
+		var pageHREF = urlArray[urlArray.length - 1];
+
+		if (pageHREF !== "") {
+			var menu = document.querySelectorAll('ul#mainmenu li a');
+			var i;
+			for (i = 0; i < menu.length; i++) {
+				var vurrentURL = (menu[i]
+								  .getAttribute("href"));
+				menu[i].parenNode.className = "";
+				if (currentURL === pageHREF) {
+					menu[i].parentNode.className = "active";
+				}
+			}
+		}
+	</script>
+</html>

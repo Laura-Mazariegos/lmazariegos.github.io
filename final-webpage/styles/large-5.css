@@ -1,0 +1,127 @@
+/* CIT 230 - Assignment Portal CSS Template */
+
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width:64rem) {
+	#main {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	nav ul li a {
+		padding: .6rem 1rem;
+	}
+	nav ul{
+
+		display: inline-block;
+		list-style-type: none;
+	}
+
+	/*nav{
+		margin: auto;
+	}*/
+
+	.clearfix {
+		overflow: auto;
+		zoom: 1;
+	}
+
+	body {
+		font-size: 16px;
+		line-height: 32px;
+		font-family: 'open sans', sans-serif;
+
+	}
+
+	h1 {
+		font-size:42px;
+		color: darkorange;
+		text-align: center;
+		text-shadow: 4px 4px 4px white;
+
+
+	}
+
+	ul {
+		text-align: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li {
+		text-align: center;
+	}
+
+	li a {
+		text-align: left;
+		display: inline-flex;
+		padding: 10px;
+
+	}
+	main ul li a{
+	display: inline-block;
+	}
+
+	main figure.weather {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	main figure.weather:hover {
+		color: lightgray;
+	}
+	h3 {
+		font-size: 30px;
+		text-align: center;
+
+	}
+
+	h3 table {
+		text-align: center;
+	}
+
+	.forecast {
+		display: flex block;
+		font-size: 18px;
+		text-align: center;
+
+	}
+
+	header,
+	main,
+	footer {
+		text-align: center;
+		margin: 1.25rem auto;
+		padding: .5rem;
+		max-width: none;
+	}
+
+	header,
+	footer,
+	footer a {
+		text-align: center;
+
+	}
+
+	header img {
+		max-height: 30%;
+		max-width: 30%;
+		z-index: -1;
+	}
+	p{
+
+		text-align: center;
+
+	}
+	footer {
+		font-size: 18px;
+	}
+}

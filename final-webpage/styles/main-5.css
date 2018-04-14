@@ -1,0 +1,284 @@
+/* CIT 230 - Assignment Portal CSS Template */
+
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 2.6rem;
+	color: lightgray;
+}
+
+nav.primaryNav {
+	position: absolute;
+	margin: 0 0 0 0;
+	top: 12px;
+	right: 45px;
+}
+
+nav.primaryNav li {
+	background-color: #990000;
+	display: block;
+	width: 100%;
+
+}
+
+nav.primaryNav li a {
+	padding: 5px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+nav {
+
+	align-content: center;
+	background-color: #990000;
+	font-family: 'open sans';
+}
+
+nav ul {
+
+	text-align: center;
+	list-style-type: none;
+	padding: 2em 2em 2em;
+}
+
+nav ul li.active a {
+	background: #660000;
+	color: white;
+}
+
+nav ul li a {
+
+	font-size: 18px;
+	display: inline-block;
+	padding: 1em 1em 1em 1em;
+	text-align: center;
+	color: white;
+	/*border: 2px solid rgba(0, 0, 0, 0.3);*/
+
+}
+
+nav ul li a:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+}
+
+/*nav ul.navigation {
+	display:;
+}*/
+
+body {
+	font-size: 16px;
+	line-height: 32px;
+	font-family: 'open sans', sans-serif;
+	color: #cccccc;
+	background-color: #000000;
+
+}
+
+
+
+
+h1 {
+	text-align: center;
+	font-size: 42px;
+	color: darkorange;
+	text-shadow: 4px 4px 4px white;
+
+}
+
+/*ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	width: 80px;
+	background-color: antiquewhite;
+}*/
+
+main ul li {
+
+	padding: 1em 1em 1em 1em;
+	border: 2px solid black;
+	margin: auto;
+	display:block;
+	grid-template-columns: auto;
+
+}
+p{
+	width:80%;
+}
+
+main ul.home {
+
+	margin:auto;
+	/*display:grid;
+	grid-template-columns: auto;*/
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	color: darkorange;
+	text-shadow: 2px 2px 2px white;
+}
+
+p {
+
+	margin: auto;
+	text-align: center;
+}
+
+.summary table {
+	visibility: visible;
+	padding: 10px;
+	text-align: center;
+	border: 2px solid black;
+	margin: auto;
+}
+
+h3 {
+		font-size: 30px;
+		text-align: center;
+		color: darkorange;
+		text-shadow: 2px 2px 2px white;
+	}
+
+.forecast h3 {
+	visibility: hidden;
+	border-bottom: 1px solid #bbb;
+}
+
+table {
+	/*visibility: hidden;*/
+	border: 1px solid #bbb;
+	text-align: center;
+	margin: auto;
+	font-size: 18px;
+	box-shadow: 5px 5px 5px #cc6600;
+
+}
+
+table th {
+	background-color: #990000;
+	padding: 5px;
+	margin: 5px;
+}
+
+table td {
+	background-color: #660000;
+	padding: 5px;
+	margin: 5px;
+
+}
+ul li strong{
+	color: #cc6600;
+
+
+}
+
+header,
+main,
+footer {
+	margin: 1.25rem auto;
+	padding: .5rem;
+	max-width: none;
+}
+
+figcaption {
+	color: black;
+}
+
+main figure.people img {
+	margin: auto;
+	width: 100%;
+
+}
+
+
+
+main ul li img {
+	margin-left: 2em;
+	width: 70%;
+	box-shadow: 5px 5px 5px #cc6600;
+}
+
+
+
+
+header,
+footer,
+footer a {
+	text-align: center;
+
+}
+
+
+
+header img {
+	max-height: 30%;
+	max-width: 30%;
+	z-index: -1;
+	box-shadow: 5px 5px 5px #cc6600;
+
+
+}
+
+footer {
+	font-size: 18px;
+}
+
+footer ul li {
+
+	display:inline-block;
+	margin: 5px;
+	color: white;
+	background-color: #cc6600;
+	padding: 10px;
+
+}
+
+form#weatherform {
+	margin: 1em 5%;
+	text-align: center
+}
+
+fieldset {
+	background-color: black;
+	border-radius: 2em;
+	margin: auto;
+	border: darkorange solid;
+	box-shadow: 5px 5px 15px #cc6600;
+	max-width: 60%
+}
+
+legend {
+	color: ghostwhite;
+	margin-left: 5%;
+	padding: .8em;
+	border: darkcyan solid;
+	background-color: #660000;
+	border-radius: 1em;
+
+}
+
+label span {
+	display: block;
+	padding-top: 1em;
+	text-align: center;
+}
